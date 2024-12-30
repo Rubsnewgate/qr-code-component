@@ -1,0 +1,35 @@
+// colors
+$white: hsl(0, 0%, 100%)
+$ligh-gray: hsl(212, 45%, 89%)
+$grayish-blue: hsl(220, 15%, 55%)
+$dark-blue: hsl(218, 44%, 22%)
+
+// typography
+$primary-font: 'Montserrat', sans-serif
+
+// font-sizes
+$sm-font: 1.5rem
+$lg-font: 2rem
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	display: grid
+	place-content: center
+	width: 100%
+	height: 100vh
+	margin: 0
+	background-color: $ligh-gray
+
+// mixins
+@mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap
