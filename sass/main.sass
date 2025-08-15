@@ -1,35 +1,34 @@
 @use 'guide.sass'
 
-// main container
-.main-wrapper
+// Qr card
+.qr
 	display: grid
 	grid-template-rows: 1.5fr 1fr
-	width: 320px
-	height: 520px
-	padding: 15px
+	width: min(20rem, 100%)
+	height: 32.5rem
+	margin: 0 auto
+	padding: 1rem
 	font-family: guide.$primary-font
 	background-color: guide.$white
-	border-radius: 20px
-	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3)
+	border-radius: 1rem
+	box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3)
 
-// qr code section
-.qr__image
+// qr code
+.qr-image
 	width: 100%
 	height: 100%
-	border-radius: 10px
+	border-radius: 0.5rem
 
-// qr info section
+// qr info
 .qr__info
-	@include guide.flexbox(column, center, center, 20px)
+	@include guide.flexbox(column, center, center, 1.25rem)
 
-.qr__title
-	margin: 0
+.info-title
 	font-size: guide.$lg-font
 	text-align: center
 	color: guide.$dark-blue
 
-.qr__description
-	margin: 0
+.info-message
 	font-size: guide.$sm-font
 	color: guide.$grayish-blue
 	text-align: center
